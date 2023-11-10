@@ -1,0 +1,14 @@
+name: First Workflow # Nome do workflow
+
+on: workflow_dispatch # Definição de qual evento precisa acontecer pra ser disparado o workflow (workflow_dispatch - perminte disparar o workflow de forma manual)
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest # Seleciona o environment onde o código será executado
+        steps:
+            - name: Greeting # nome do primeiro step
+              run: echo "Hello World"
+            
+            - name: Goodbye
+              run: echo "Done-Bye!"
+
